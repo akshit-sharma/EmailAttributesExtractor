@@ -1,3 +1,8 @@
+
+Usage :
+    ExtractEmailAttributes (InputFolder) OutputFile.csv
+
+
 Working on CSDMC2010_SPAM dataset
 
 extracting attributes-
