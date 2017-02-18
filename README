@@ -1,0 +1,21 @@
+Working on CSDMC2010_SPAM dataset
+
+extracting attributes-
+
+    Total no of characters (C)
+    Total no of alpha chars / C Ratio of alpha chars
+    Total no of digit chars / C
+    Total no of whitespace chars/C
+    Frequency of each letter / C (36 letters of the keyboard – A-Z, 0-9)
+    Frequency of special chars (10 chars: *, _ ,+,=,%,$,@,ـ , \,/ )
+    Frequency of punctuation 18 punctuation chars: . ، ; ? ! : ( ) – “ « » < > [ ] { }
+    Total no of words (M)
+    Total no of short words/M Two letters or less
+    Total no of chars in words/C
+    Average word length
+    Avg. sentence length in chars
+    Avg. sentence length in words
+    ham / spam
+
+for each email in training
+
