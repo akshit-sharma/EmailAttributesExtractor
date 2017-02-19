@@ -159,11 +159,11 @@ void AttributesHolder::writeAttributes(FILE * output_stream) {
                   ((float)(digit_chars)/total_chars),
                   ((float) whitespace/total_chars));
     for(size_t i=0; i<ALPHA_CHARS; i++)
-        printf_stream(output_stream,"%" PRIu64 ",",freq_alpha[i]);
+        printf_stream(output_stream,"%f,",(float)freq_alpha[i]/total_chars);
     for(size_t i=0; i<SPECIAL_CHARS; i++)
-        printf_stream(output_stream,"%" PRIu64 ",",freq_special[i]);
+        printf_stream(output_stream,"%f,",(float)freq_special[i]/total_chars);
     for(size_t i=0; i<PUNCT_CHARS; i++)
-        printf_stream(output_stream,"%" PRIu64 ",",freq_punct[i]);
+        printf_stream(output_stream,"%f,",(float)freq_punct[i]/total_chars);
     printf_stream(output_stream, "%" PRIu64 ",%f,%f,%f,%f,%f,%d\n", total_words,
                   ((float) total_short_words/total_words),
                   ((float) total_chars_in_words/total_chars),
