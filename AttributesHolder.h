@@ -9,7 +9,7 @@
 #include <fstream>
 
 const int ALPHA_CHARS = 36;
-const int SPECIAL_CHARS = 10;
+const int SPECIAL_CHARS = 9;
 const int PUNCT_CHARS = 14;
 
 // using http://stackoverflow.com/questions/770238/neural-networks-for-email-spam-detection

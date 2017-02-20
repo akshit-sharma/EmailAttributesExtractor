@@ -12,8 +12,8 @@ extracting attributes-
     Total no of digit chars / C
     Total no of whitespace chars/C
     Frequency of each letter / C (36 letters of the keyboard – A-Z, 0-9)
-    Frequency of special chars (10 chars: *, _ ,+,=,%,$,@,ـ , \,/ )
-    Frequency of punctuation 18 punctuation chars: . ، ; ? ! : ( ) – “ « » < > [ ] { }
+    Frequency of special chars / C (10 chars: *, _ ,+,=,%,$,@,ـ , \,/ )
+    Frequency of punctuation 18 punctuation chars / C : . ، ; ? ! : ( ) – “ « » < > [ ] { }
     Total no of words (M)
     Total no of short words/M Two letters or less
     Total no of chars in words/C

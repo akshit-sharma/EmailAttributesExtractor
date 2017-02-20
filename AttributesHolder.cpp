@@ -164,13 +164,19 @@ void AttributesHolder::writeAttributes(FILE * output_stream) {
         printf_stream(output_stream,"%f,",(float)freq_special[i]/total_chars);
     for(size_t i=0; i<PUNCT_CHARS; i++)
         printf_stream(output_stream,"%f,",(float)freq_punct[i]/total_chars);
-    printf_stream(output_stream, "%" PRIu64 ",%f,%f,%f,%f,%f,%d\n", total_words,
+    printf_stream(output_stream, "%" PRIu64 ",%f,%f,%f,%f,%f,", total_words,
                   ((float) total_short_words/total_words),
                   ((float) total_chars_in_words/total_chars),
                   ((float) total_word_length/total_words),
                   ((float) total_sentence_chars / total_sentence),
-                  ((float) total_sentence_words / total_sentence),
-                  ham_status);
+                  ((float) total_sentence_words / total_sentence));
+    std::string status = std::string("spam");
+    if(ham_status==1){
+        status = std::string("ham");
+    }
+    printf_stream(output_stream, "'%s'\n",
+                  status.c_str()    );
     fflush(output_stream);
+
 }
 
